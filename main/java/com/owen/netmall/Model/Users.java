@@ -1,5 +1,6 @@
 package com.owen.netmall.Model;
 
+//Create the getter and setter methods for the Price, name and phone number of the user.
 
 public class Users
 
