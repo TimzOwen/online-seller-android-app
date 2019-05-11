@@ -74,7 +74,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity
     }
 
 
-
+//Use implecit intend here please.
     public void openGallery()
     {
         Intent galleryIntent = new Intent();
@@ -83,7 +83,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity
         startActivityForResult(galleryIntent, GalleryPick);
     }
 
-    public void findIds()
+    public void findIds()// Remove this finction and use the USGC web APi to collect data .Dont also cast the TextViews
     {
         addNewProduct  = (Button)findViewById(R.id.btn_add_new_product);
         inputName = (EditText)findViewById(R.id.product_name);
