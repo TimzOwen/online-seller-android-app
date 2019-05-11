@@ -213,7 +213,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity
         productMap.put("category", categoryName);
         productMap.put("price", Price);
         productMap.put("name", Pname);
-
+//checks from the database firebase child.href update using the Picasso API
         productRef.child(productRandomKey).updateChildren(productMap)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
@@ -232,7 +232,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity
                        {
                            loginProgress.dismiss();
                            String message = task.getException().toString();
-
+//change this to use the Picasso API also
                            Toast.makeText(AdminAddNewProductActivity.this,"Error: " + message ,Toast.LENGTH_SHORT).show();
                        }
                     }
