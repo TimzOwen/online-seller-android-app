@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import io.paperdb.Paper;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity  implements View.OnClickListener{
 
     private Button logoutbtn;
     private Button Loginbtn;
@@ -25,7 +25,8 @@ public class HomeActivity extends AppCompatActivity {
         logoutbtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 
                 //used to make sure a user once loged in is remembeered
                 Paper.book().destroy();
@@ -36,4 +37,16 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
+    public void onClick(View v)
+    {
+     if(v==btnLogin)
+     {
+         //perform actions by user
+     }
+        if(v==logoutbtn)
+        {
+            //perform the button logout instructions
+        }
+    }
+
 }
