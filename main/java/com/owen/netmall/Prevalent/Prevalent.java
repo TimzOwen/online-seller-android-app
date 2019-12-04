@@ -12,3 +12,5 @@ public class Prevalent
          public static final String userPasswordKey = "userPassword";
 
       }
+
+// create a model instead of use case prevelent class and include all constant values
